@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careertronics - Find Your Dream Job</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+     
+    <body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+        <source src="image/fotor-video_remover_object-preview-20250116202927.webm" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="image/logonnn.jpg" alt="Careertronics Logo" class="logo-img">
+                <span class="logo-text">Careertronics</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#jobs">Jobs</a>
+                <a href="#applications">Applications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <i data-lucide="bell"></i>
+                <a href="login.html">
+                <i data-lucide="user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Job Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <h1>Find Your Dream Job Today</h1>
+            
+            <div class="search-box">
+                <div class="search-input">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Job title ">
+                </div>
+                
+                <div class="search-input">
+                    <i data-lucide="map-pin"></i>
+                    <input type="text" placeholder="Location">
+                </div>
+                
+                <div class="search-input">
+                    <i data-lucide="briefcase"></i>
+                    <select>
+                        <option>Full Time</option>
+                        <option>Part Time</option>
+                        <option>Contract</option>
+                    </select>
+                </div>
+                
+                <button class="search-btn">Search Jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section class="jobs-section" id="jobs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Job Openings</h2>
+                <select id="jobSort">
+                    <option>Most Recent</option>
+                    <option>Highest Paid</option>
+                </select>
+            </div>
+            
+            <div class="jobs-grid" id="jobsList">
+                <!-- Jobs will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications-section" id="applications">
+        <div class="container">
+            <h2>My Applications</h2>
+            
+            <div class="applications-header">
+                <div class="stat-card">
+                    <h3>Total Applications</h3>
+                    <div class="stat-value" id="totalApplications">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Interviews Scheduled</h3>
+                    <div class="stat-value" id="interviewCount">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Offers Received</h3>
+                    <div class="stat-value" id="acceptedCount">0</div>
+                </div>
+            </div>
+            
+            <div class="filters">
+                <select id="statusFilter">
+                    <option value="All">All Applications</option>
+                    <option value="Applied">Applied</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Rejected">Rejected</option>
+                    <option value="Accepted">Accepted</option>
+                </select>
+            </div>
+            
+            <div id="applicationsList">
+                <!-- Applications will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i data-lucide="mail"></i>
+                        <span>contact@careertronic.in
+</span>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="phone"></i>
+                        <span>+(91) 8602755547</span>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>1st Floor, E-108, Sector 1, Near Axis Juice center, Devendra Nagar,
+                             Raipur, Chhattisgarh Pin(492001)</span>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i data-lucide="briefcase"></i>
+                        <span>Careertronics</span>
+                    </div>
+                    <p>Connecting talented professionals with amazing opportunities.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#jobs">Find Jobs</a></li>
+                        <li><a href="#applications">Applications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="#">Post a Job</a></li>
+                        <li><a href="#">Browse Candidates</a></li>
+                        <li><a href="#">Pricing Plans</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 careertronics Global Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
